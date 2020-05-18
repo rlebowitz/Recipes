@@ -1,10 +1,15 @@
-﻿namespace Recipes.Web.Pages
+﻿
+using Microsoft.AspNetCore.Components;
+
+namespace Recipes.Web.Pages
 {
     /// <summary>
     /// Defines the <see cref="Index" />.
     /// </summary>
     public partial class Index
     {
+        [CascadingParameter]
+        public string Title { get; set;}
         /// <summary>
         /// Gets or sets the Sum.
         /// </summary>
